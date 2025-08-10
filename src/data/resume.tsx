@@ -14,7 +14,7 @@ export const DATA = {
     "A developer building cool solutions with open source technologies.",
   summary:
     "I am **Dujal Sawarkar**, a final-year Bachelor of Engineering student in Computer Science with a **9.64 CGPA**. I am primarily a **Full Stack Engineer** with extensive experience in both frontend and backend technologies, including Next.js, TypeScript, and various DevOps tools. I have practical experience as a **Generative AIOps Intern** and a **Software Development Intern**, where I successfully automated deployment pipelines, redesigned website architectures, and significantly improved performance and user engagement metrics.",
-  avatarUrl: "/me.jpeg",
+  avatarUrl: "/me.jpg",
   skills: [
     {
       name: "Next.js",

@@ -14,7 +14,7 @@
 //     "A Full Stack Engineer specializing in creating digital experiences and turning visions into web realities.",
 //   summary:
 //     "I am Prajwal Gadhave, a final-year Bachelor of Engineering student in Computer Science with a **9.64 CGPA**[cite: 12]. I am primarily a **Full Stack Engineer** with extensive experience in both frontend and backend technologies, including Next.js, TypeScript, and various DevOps tools. I have practical experience as a **Generative AIOps Intern** [cite: 18] and a **Software Development Intern**[cite: 24], where I successfully automated deployment pipelines, redesigned website architectures, and significantly improved performance and user engagement metrics.",
-//   avatarUrl: "/me.jpeg",
+//   avatarUrl: "/me.jpg",
 //   skills: [
 //     {
 //       name: "Next.js",
