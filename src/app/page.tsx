@@ -1,4 +1,3 @@
-import ContactMeForm from "@/components/contact-me-form";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -131,7 +130,7 @@ export default function Page() {
                 >
                   <Badge
                     key={skill.name}
-                    className={`hover:cursor-default transition-all duration-300 ease-in-out ${skill.name === "Appwrite" ? "hover:bg-[#FF1F5E] hover:text-white" : ""}`}
+                    className="hover:cursor-default transition-all duration-300 ease-in-out"
                   >
                     <span className="mr-2">{skill.icon}</span>
                     {skill.name}
@@ -226,8 +225,8 @@ export default function Page() {
                     Achievements
                   </h2>
                   <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    From going to Vietnam to participating in Hackathons, I like
-                    to keep exploring and learning new things.
+                    From competitive programming to technical fests, here are
+                    some milestones I&apos;m proud of.
                   </p>
                 </div>
               </div>
@@ -256,23 +255,31 @@ export default function Page() {
         <section id="contact">
           <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
             <BlurFade delay={BLUR_FADE_DELAY * 16}>
-              <div className="space-y-0">
+              <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Get in Touch
                 </h2>
-                <ContactMeForm />
-                <p className="mx-auto max-w-[600px] text-muted-foreground text-sm/relaxed md:text-base/relaxed">
-                  Or just want to have a casual chat? you can just shoot me a DM
-                  on{" "}
+                <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed">
+                  Have a project in mind or just want to connect? I&apos;m always open to a good conversation.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 items-center justify-center pt-4">
+                  <Link href={`mailto:${DATA.contact.email}`}>
+                    <Button size="lg">
+                      Email me
+                    </Button>
+                  </Link>
                   <Link
                     href={DATA.contact.social.LinkedIn.url}
-                    className="text-foreground hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    LinkedIn
+                    <Button size="lg" variant="outline">
+                      LinkedIn
+                    </Button>
                   </Link>
-                  .
+                </div>
+                <p className="text-muted-foreground text-sm pt-1">
+                  {DATA.contact.email} &nbsp;·&nbsp; {DATA.contact.tel}
                 </p>
               </div>
             </BlurFade>

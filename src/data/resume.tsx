@@ -1,8 +1,7 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon, Play } from "lucide-react";
-import { DiPostgresql } from "react-icons/di";
-import { FaDocker, FaNodeJs, FaPython } from "react-icons/fa";
-import { SiAppwrite, SiKubernetes } from "react-icons/si";
+import { HomeIcon, NotebookIcon } from "lucide-react";
+import { FaJs, FaNodeJs } from "react-icons/fa";
+import { SiExpress, SiMongodb, SiRabbitmq, SiVuedotjs } from "react-icons/si";
 
 export const DATA = {
   name: "Dujal Sawarkar",
@@ -11,42 +10,50 @@ export const DATA = {
   location: "Pune, India",
   locationLink: "https://maps.app.goo.gl/N856FibcPBczxdJf9",
   description:
-    "A developer building cool solutions with open source technologies.",
+    "Building scalable AI-powered products as a Software Engineer at Champhunt (Techstars '24).",
   summary:
-    "I am **Dujal Sawarkar**, a final-year Bachelor of Engineering student in Computer Science with a **9.64 CGPA**. I am primarily a **Full Stack Engineer** with extensive experience in both frontend and backend technologies, including Next.js, TypeScript, and various DevOps tools. I have practical experience as a **Generative AIOps Intern** and a **Software Development Intern**, where I successfully automated deployment pipelines, redesigned website architectures, and significantly improved performance and user engagement metrics.",
+    "I am **Dujal Sawarkar**, a Computer Engineering graduate (2021–2025) from **Dr. D.Y. Patil Institute of Engineering, Management and Research**, Pune, with a **8.87 GPA**. I currently work as a **Software Engineer at Champhunt Inc (Techstars '24)**, where I've architected a Feed Recommendation system using KNN vector search and multi-model Gemini embeddings serving **230K+ users**, shipped transactional email pipelines handling **200K+ deal redeems**, built an async content moderation pipeline with **RabbitMQ** that flagged 7,400+ posts, and developed the Ashes Prediction Engine. I love building scalable backends, AI-powered systems, and clean frontends with **Next.js**, **Node.js**, **MongoDB**, and **TypeScript**.",
   avatarUrl: "/me.jpg",
   skills: [
     {
-      name: "Next.js",
-      icon: <Icons.nextjs className="size-3" />,
+      name: "JavaScript",
+      icon: <FaJs className="size-3" />,
     },
     {
-      name: "Typescript",
+      name: "TypeScript",
       icon: <Icons.typescript className="size-3" />,
+    },
+    {
+      name: "React.js",
+      icon: <Icons.react className="size-3" />,
+    },
+    {
+      name: "Next.js",
+      icon: <Icons.nextjs className="size-3" />,
     },
     {
       name: "Node.js",
       icon: <FaNodeJs className="size-3" />,
     },
     {
-      name: "Python",
-      icon: <FaPython className="size-3" />,
+      name: "Express.js",
+      icon: <SiExpress className="size-3" />,
     },
     {
-      name: "Postgres",
-      icon: <DiPostgresql className="size-3" />,
+      name: "MongoDB",
+      icon: <SiMongodb className="size-3" />,
     },
     {
-      name: "Docker",
-      icon: <FaDocker className="size-3" />,
+      name: "Tailwind CSS",
+      icon: <Icons.tailwindcss className="size-3" />,
     },
     {
-      name: "Kubernetes",
-      icon: <SiKubernetes className="size-3" />,
+      name: "RabbitMQ",
+      icon: <SiRabbitmq className="size-3" />,
     },
     {
-      name: "Appwrite",
-      icon: <SiAppwrite className="size-3" />,
+      name: "Vue.js",
+      icon: <SiVuedotjs className="size-3" />,
     },
   ],
   navbar: [
@@ -54,24 +61,24 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "prajwalgadhave356@gmail.com",
-    tel: "+91 7709027812",
+    email: "dujalsawarkar5@gmail.com",
+    tel: "+91 8605090478",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/prajwal-0706",
+        url: "https://github.com/DujalSawarkar",
         icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/prajwal-gadhave/",
+        url: "https://www.linkedin.com/in/dujal-sawarkar/",
         icon: Icons.linkedin,
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "mailto:prajwalgadhave356@gmail.com",
+        url: "mailto:dujalsawarkar5@gmail.com",
         icon: Icons.email,
         navbar: true,
       },
@@ -80,59 +87,63 @@ export const DATA = {
 
   work: [
     {
-      company: "LinuxWorld Informatics",
-      href: "https://www.lwindia.com/",
-      badges: [],
-      location: "On site",
-      title: "Generative AIOps Intern",
-      logoUrl: "/work-experience/lw.png",
-      start: "June 2023",
-      end: "December 2023",
+      company: "Champhunt Inc",
+      href: "https://champhunt.com/",
+      badges: ["Techstars '24"],
+      location: "Pune, Maharashtra",
+      title: "Software Engineer",
+      logoUrl: "/work-experience/champhunt.png",
+      start: "April 2025",
+      end: null,
       description: [
-        "- Joined LinuxWorld Informatics as a **Generative AIOps Intern** in June, 2023.",
+        "- Architected a **Feed Recommendation system** using KNN vector search with multi-model Gemini embeddings (text, image, video), serving **230K+ users** across **7.5M+ tracked impressions**.",
         "-----",
-        "- Managed an AWS-based platform to **automate the creation and deployment of Dockerfiles to GitHub**, reducing deployment time by 50%.",
-        "- Designed and deployed 4 stages from **AI-powered CI/CD pipeline** that automates code deployments to EKS triggered by GitHub events, minimizing common deployment errors.",
-        "- Collaborated in a cross-functional team to integrate Generative AI technologies, increasing **successful code deployments** by 25% in the first quarter.",
+        "- Shipped a **transactional email system** via SendGrid across 8 event types (deal redemption, payment flows, subscription lifecycle) and built a scheduled retargeting email pipeline for re-engagement, wired into a platform processing **200K+ deal redeems**.",
+        "- Built an **async content moderation pipeline** using RabbitMQ to auto-flag posts without blocking request throughput — flagged **7,400+ posts** in production.",
+        "- Built the **Ashes Prediction Engine** — prediction locking, streak tracking, wildcard flow, and reward calculation using Express.js and MongoDB Aggregation Pipelines.",
       ],
       links: [
         {
           type: "Website",
-          href: "https://www.lwindia.com/",
+          href: "https://champhunt.com/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Confirmation Letter",
-          href: "https://drive.google.com/file/d/1CYnQCQz1kKd4DhnwDVK5k0gu1g_FV6WJ/view?usp=sharing",
-          icon: <Icons.googleDrive className="size-3" />,
         },
       ],
     },
     {
-      company: "Turing Techlabs",
-      href: "https://turingtechlabs.com/",
+      company: "WayBeyond.tech Pvt. Ltd.",
+      href: "https://waybeyond.tech/",
       badges: [],
-      location: "Remote",
-      title: "Frontend Developer",
-      logoUrl: "/work-experience/turing.png",
-      start: "March 2022",
-      end: "September 2022",
+      location: "Pune, Maharashtra",
+      title: "Full Stack JavaScript Developer Intern",
+      logoUrl: "/work-experience/waybeyond.png",
+      start: "January 2025",
+      end: "March 2025",
       description: [
-        "- Coordinated with Turing Techlabs to design and deliver an amazing website for a Hospital",
-        "- ShreeArogyam Ayu: Created a fully customized **React-based website**, enhancing the online presence of client's business",
+        "- Designed and launched a high-performance web app for **Sunya Meditation Studio** using React.js and Hapi.js, enhancing user experience.",
+        "- Collaborated with clients including **Paperboat** and **EY** on web development deliverables.",
       ],
       links: [
         {
           type: "Website",
-          href: "https://turingtechlabs.com/",
+          href: "https://waybeyond.tech/",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Letter of Recommendation",
-          href: "https://drive.google.com/file/d/1ONCudngptfuLZuR7hjSinbvVSr7fEnbd/view?usp=sharing",
-          icon: <Icons.email className="size-3" />,
-        },
       ],
+    },
+    {
+      company: "GrapeDawn",
+      href: "#",
+      badges: [],
+      location: "Pune, Maharashtra",
+      title: "Frontend Developer",
+      logoUrl: "/work-experience/grapedawn.png",
+      start: "March 2024",
+      end: "May 2024",
+      description: [
+        "- Designed, built, and deployed scalable web applications using **Vue.js** and **Nuxt.js**, enhancing overall performance and user experience by **25%**.",
+      ],
+      links: [],
     },
   ],
   education: [
@@ -140,214 +151,154 @@ export const DATA = {
       school:
         "Dr. D.Y. Patil Institute of Engineering, Management and Research",
       href: "https://www.dypiemr.ac.in/",
-      degree:
-        "Bachelor's of Technology in Computer Science Engineering | 9.83 CGPA",
+      degree: "Bachelor of Engineering in Computer Science | 8.87 GPA",
       logoUrl: "/education/dyp.png",
       start: "2021",
       end: "2025",
     },
-    {
-      school:
-        "Vidya Pratishthan's Someshwar English Medium School & Jr. College",
-      href: "https://www.vpsomeshwar.org/",
-      degree: "Senior Secondary | X - 80.8% | XII - 91.5%",
-      logoUrl: "/education/vpsems.png",
-      start: "2009",
-      end: "2021",
-    },
   ],
   projects: [
     {
-      title: "Keep Up",
-      href: "https://keep-up-brown.vercel.app/",
-      dates: "December 2023 - March 2024",
+      title: "Style-sync",
+      href: "https://style-sync-project.vercel.app/",
+      dates: "2024",
       active: true,
-      // TODO: TO edit the description
       description:
-        "Time of Use (TOU) Tariff based Solar and Grid energy management platform along with Web3 based excess energy trading.",
-      technologies: ["Next.js", "Typescript", "LLaMa3.2", "Web Scraping"],
+        "A personalized **AI wardrobe app** built with Next.js and Tailwind CSS, integrating **Gemini** and **Grok APIs** to recommend outfit combinations from your existing wardrobe. Uses AI-powered logic to understand user preferences and suggest stylish, context-aware looks.",
+      technologies: ["Next.js", "Tailwind CSS", "Gemini API", "Grok API"],
       links: [
         {
           type: "Website",
-          href: "https://keep-up-brown.vercel.app/",
+          href: "https://style-sync-project.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
+      ],
+      image: "/projects/style-sync.png",
+    },
+    {
+      title: "OSV Slack Scanner",
+      href: "https://github.com/DujalSawarkar/osv-slack-scanner",
+      dates: "2024",
+      active: true,
+      description:
+        "A real-time **npm dependency vulnerability scanner** using Next.js, TypeScript, and the **Google OSV API**, with **Slack DM alerts**, a MongoDB-backed analytics dashboard, GitHub OAuth access control, risk-level classification, and a built-in CLI tool.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Google OSV API",
+        "MongoDB",
+        "Slack API",
+      ],
+      links: [
         {
           type: "Source",
-          href: "https://github.com/prajwal-0706/Keep-Up",
+          href: "https://github.com/DujalSawarkar/osv-slack-scanner",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/keep-up.png",
+      image: "/projects/osv-scanner.png",
     },
     {
-      title: "Lingo",
-      href: "https://lingo-snowy.vercel.app/",
-      dates: "September 2024 - October 2024",
+      title: "Real Estate CRM",
+      href: "https://crm-frontend.motionlabsdemo.shop/",
+      dates: "2024",
       active: true,
       description:
-        "A Duolingo-inspired platform with **AI-generated voices** and an interactive **points/XP system**. Implemented a **hearts system** and **lesson retry feature**, boosting consistent learning and improving language learning curve.",
-      technologies: ["Next.js", "Typescript", "CopilotKit", "Appwrite"],
+        "A scalable **CRM platform** to manage property listings, sales pipelines, and client interactions with real-time dashboards and advanced search. Features **secure role-based access**, automated lead workflows, and bulk import/export with detailed activity tracking.",
+      technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
       links: [
         {
           type: "Website",
-          href: "https://lingo-snowy.vercel.app/",
+          href: "https://crm-frontend.motionlabsdemo.shop/",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/prajwal-0706/lingo",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
-      image: "/projects/lingo.svg",
+      image: "/projects/real-estate-crm.png",
     },
     {
-      title: "Threads",
-      href: "https://threads-social-media-app.vercel.app/",
-      dates: "April 2023 - March 2023",
+      title: "Estatery",
+      href: "https://github.com/DujalSawarkar",
+      dates: "2024",
       active: true,
       description:
-        "A news sharing platform targeting university students in particular, aiming to reduce spread of misinformation.",
-      technologies: ["Java", "XML", "Firebase", "Android Studio"],
-      links: [
-        {
-          type: "Website",
-          href: "https://threads-social-media-app.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/prajwal-0706/threads-app",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/bu-news.png",
-    },
-    {
-      title: "Asclepius",
-      href: "https://github.com/ChiragAgg5k/asclepius",
-      dates: "Dec 2022 - Jan 2023",
-      active: true,
-      description:
-        "A desktop application developed in Python and Custom Tkinter to view and request medicines from the Wellness center, check medicine availability, and order medicines directly.",
-      technologies: ["Python", "Tkinter", "SQLite"],
+        "A scalable **real estate platform** with real-time tracking of property sales, purchases, and rentals. Integrated **ConvexDB** for seamless data handling and **Clerk** for secure authentication — managing over **10,000 daily property listings**. Boosted user engagement by **40%**.",
+      technologies: ["React.js", "ConvexDB", "Clerk", "TypeScript"],
       links: [
         {
           type: "Source",
-          href: "https://github.com/ChiragAgg5k/asclepius",
+          href: "https://github.com/DujalSawarkar",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/asclepius.png",
+      image: "/projects/estatery.png",
+    },
+    {
+      title: "Dressland Uniforms",
+      href: "https://github.com/DujalSawarkar",
+      dates: "2024",
+      active: true,
+      description:
+        "A robust **school uniform management website** built with Vue.js and Nuxt.js, enabling seamless management of multiple schools and users. Boosted operational efficiency by **35%** and facilitated uniform orders for over **100 schools** with real-time tracking.",
+      technologies: ["Vue.js", "Nuxt.js", "TypeScript"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/DujalSawarkar",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/dressland.png",
+    },
+    {
+      title: "Shop.co",
+      href: "https://github.com/DujalSawarkar",
+      dates: "2024",
+      active: true,
+      description:
+        "A dynamic **eCommerce website** built with Next.js and React.js, with intuitive navigation and secure payment gateways — leading to a **25% increase in conversions**. Advanced product search and filtering reduced user browsing time by **40%**.",
+      technologies: ["Next.js", "React.js", "TypeScript", "JavaScript"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/DujalSawarkar",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/shopco.png",
     },
   ],
   positions: [
     {
-      title: "Content Writer",
-      dates: "July 2024 - Present",
-      location: "GeeksForGeeks",
+      title: "Technical Head",
+      dates: "2023 - 2024",
+      location: "Computer Student Association, DYPIEMR",
       description:
-        "I like to write technical articles for GeeksForGeeks in my past time. Let's me be updated with various kinds of technologies.",
-      image: "/gfg.png",
-      links: [
-        {
-          title: "Contributions",
-          href: "https://www.geeksforgeeks.org/user/chiragaggarwal5k/contributions/",
-        },
-      ],
+        "Led tech projects, managed the association website, hosted **20+ events** (hackathons, workshops, tech talks), and amplified student engagement by **30%**.",
+      image: "/education/dyp.png",
+      links: [],
     },
     {
-      title: "Summer Immersion Participant",
-      dates: "July 2024",
-      location: "FPT University, Da Nang, Vietnam",
+      title: "Web Developer Head",
+      dates: "2022 - 2023",
+      location: "Computer Student Association, DYPIEMR",
       description:
-        "Participated in a 10-day fully funded Summer Immersion Programme in Vietnam hosted by FPT University, providing rich insights into Vietnamese culture from a entrepreneurship and technological point of view.",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_fpt_university.jpg",
-      links: [
-        {
-          title: "Website",
-          href: "https://international.fpt.edu.vn/",
-        },
-        {
-          title: "Photos",
-          href: "https://www.linkedin.com/posts/bennett-university_bennettuniversity-globalexposure-entrepreneurshipjourney-ugcPost-7232006796473683968-tKMa?utm_source=share&utm_medium=member_desktop",
-        },
-      ],
-    },
-    {
-      title: "Technical Co-Head",
-      dates: "August 2023 - May 2024",
-      location: "Computer Society of India, Bennett University",
-      description:
-        "As the technical co-head of the CSI chapter of my university, I was responsible for organizing various events, workshops, and hackathons. I also mentored and guided students in their technical journey.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGnicMMBfXdQJrZy9RvzmnhzvVw1bgLTs_qA&s",
-      links: [
-        { title: "Website", href: "https://csiindia.org/" },
-        {
-          title: "LinkedIn",
-          href: "https://www.linkedin.com/company/csi-india/",
-        },
-        {
-          title: "Welcome Letter",
-          href: "https://www.linkedin.com/posts/chiragagg5k_newrole-bennettuniversity-technology-activity-7097467074863636480-M1q6",
-        },
-      ],
-    },
-    {
-      title: "Rearch Content Management",
-      dates: "September 2022 - May 2023",
-      location: "Bennett Undergraduate Research Society (BURS)",
-      description:
-        "The research society peaked my interest in the field of research, allowing me to be guided by seniors to work on various research related projects as well as organizing events like Rescon.",
-      image: "/burs.png",
-      links: [
-        { title: "Website", href: "https://www.burs.bennett.edu.in/" },
-        {
-          title: "LinkedIn",
-          href: "https://www.linkedin.com/company/buresearchsociety/posts/?feedView=all/",
-        },
-      ],
+        "Upgraded and optimized the association website with **React.js**, improving performance by **40%**, and built a booking system for campus events.",
+      image: "/education/dyp.png",
+      links: [],
     },
   ],
   achievements: [
     {
-      title: "Summer Immersion in Vietnam",
-      dates: "July 2024",
-      location: "FPT University, Da Nang, Vietnam",
-      image: "/achievements/summer-immersion.jpeg",
+      title: "Global Rank under 1500 — CodeChef",
+      dates: "October 2022",
+      location: "CodeChef October Long Contest",
+      image: "/achievements/codechef.png",
     },
     {
-      title: "Github Constellation",
-      dates: "June 2024",
-      location: "Bangalore",
-      image: "/achievements/github-constellation.jpeg",
-    },
-    {
-      title: "Hackaccino",
-      dates: "April 2024",
-      location: "CSI Bennett University",
-      image: "/achievements/hackaccino.jpeg",
-    },
-    {
-      title: "HackWithDelhi",
-      dates: "April 2024",
-      location: "GL Bajaj Institute of Technology and Management",
-      image: "/achievements/hackwithdelhi.jpeg",
-    },
-    {
-      title: "HackCBS",
-      dates: "November 2023",
-      location: "Shaheed Sukhdev College of Business Studies",
-      image: "/achievements/hackcbs.jpeg",
-    },
-    {
-      title: "Luminous TechnoX Hackathon",
-      dates: "December 2023",
-      location: "Taj City Center, Gurugram",
-      image: "/achievements/luminous.jpg",
+      title: "Ranked 1st — CodeQuest",
+      dates: "2023",
+      location: "Technical Fest, DYPIEMR Pune",
+      image: "/achievements/codequest.png",
     },
   ],
 } as const;
