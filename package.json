@@ -4,13 +4,13 @@
   "private": false,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "bun llms-txt && bun llms-full-txt",
+    "prebuild": "node scripts/generate-llms-txt.js && node scripts/generate-llms-full-txt.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "llms-txt": "bun scripts/generate-llms-txt.js",
-    "llms-full-txt": "bun scripts/generate-llms-full-txt.js"
+    "llms-txt": "node scripts/generate-llms-txt.js",
+    "llms-full-txt": "node scripts/generate-llms-full-txt.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
