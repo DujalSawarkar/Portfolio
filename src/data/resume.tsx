@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 import { FaJs, FaNodeJs } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiRabbitmq, SiVuedotjs } from "react-icons/si";
 
@@ -58,7 +58,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "dujalsawarkar5@gmail.com",
